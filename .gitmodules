@@ -1,0 +1,4 @@
+[submodule "sepic_charger/kicad_libs"]
+	path = sepic_charger/kicad_libs
+	url = https://github.com/korken89/kicad_libs.git
+	branch = master
