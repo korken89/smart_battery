@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:sepic_charger-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -261,7 +260,7 @@ U 1 1 5BEB623C
 P 8250 3150
 F 0 "U101" V 8300 2950 50  0000 R CNN
 F 1 "INA138" V 8400 2950 50  0000 R CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 8250 3150 50  0001 C CNN
+F 2 "sot:SOT-23-5" H 8250 3150 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ina138.pdf" H 8250 3155 50  0001 C CNN
 	1    8250 3150
 	0    -1   1    0   
@@ -279,7 +278,7 @@ F 3 "~" H 8250 2450 50  0001 C CNN
 $EndComp
 Connection ~ 8150 2450
 Wire Wire Line
-	8350 2450 9500 2450
+	8350 2450 9100 2450
 Connection ~ 8350 2450
 $Comp
 L power:GND #PWR0118
@@ -458,7 +457,7 @@ Wire Wire Line
 	8600 3550 8600 3500
 Connection ~ 8600 3500
 Wire Wire Line
-	8600 3500 9500 3500
+	8600 3500 9900 3500
 Wire Wire Line
 	5150 2450 5150 3050
 $Comp
@@ -470,17 +469,6 @@ F 1 "Conn_01x02_Male" H 9673 2521 50  0001 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9700 2550 50  0001 C CNN
 F 3 "~" H 9700 2550 50  0001 C CNN
 	1    9700 2550
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:Conn_01x02_Male J105
-U 1 1 5BF54203
-P 9700 3600
-F 0 "J105" H 9672 3526 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 9673 3571 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9700 3600 50  0001 C CNN
-F 3 "~" H 9700 3600 50  0001 C CNN
-	1    9700 3600
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -519,12 +507,12 @@ $EndComp
 $Comp
 L power:GND #PWR0121
 U 1 1 5BF5570B
-P 9500 3600
-F 0 "#PWR0121" H 9500 3350 50  0001 C CNN
-F 1 "GND" H 9505 3427 50  0001 C CNN
-F 2 "" H 9500 3600 50  0001 C CNN
-F 3 "" H 9500 3600 50  0001 C CNN
-	1    9500 3600
+P 9900 3700
+F 0 "#PWR0121" H 9900 3450 50  0001 C CNN
+F 1 "GND" H 9905 3527 50  0001 C CNN
+F 2 "" H 9900 3700 50  0001 C CNN
+F 3 "" H 9900 3700 50  0001 C CNN
+	1    9900 3700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -627,7 +615,7 @@ U 1 1 5BF55D76
 P 3950 3250
 F 0 "U102" H 4200 3500 50  0000 L CNN
 F 1 "UCC2751x" H 4050 3000 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 3950 2850 50  0001 C CIN
+F 2 "sot:SOT-23-5" H 3950 2850 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/ucc27519.pdf" H 3750 3500 50  0001 C CNN
 	1    3950 3250
 	1    0    0    -1  
@@ -687,4 +675,95 @@ Wire Wire Line
 	3400 3250 3650 3250
 Wire Wire Line
 	4350 3250 4400 3250
+$Comp
+L Device:R_Small R2
+U 1 1 5BF6FB18
+P 9100 3050
+F 0 "R2" H 9041 3004 50  0000 R CNN
+F 1 "22k" H 9041 3095 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9100 3050 50  0001 C CNN
+F 3 "~" H 9100 3050 50  0001 C CNN
+	1    9100 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5BF6FB1F
+P 9100 3150
+F 0 "#PWR01" H 9100 2900 50  0001 C CNN
+F 1 "GND" H 9105 2977 50  0001 C CNN
+F 2 "" H 9100 3150 50  0001 C CNN
+F 3 "" H 9100 3150 50  0001 C CNN
+	1    9100 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5BF703FD
+P 9100 2750
+F 0 "R1" H 9041 2704 50  0000 R CNN
+F 1 "100k" H 9041 2795 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9100 2750 50  0001 C CNN
+F 3 "~" H 9100 2750 50  0001 C CNN
+	1    9100 2750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9100 2650 9100 2450
+Connection ~ 9100 2450
+Wire Wire Line
+	9100 2450 9500 2450
+$Comp
+L Device:C_Small C1
+U 1 1 5BF7177B
+P 9450 3050
+F 0 "C1" H 9358 3004 50  0000 R CNN
+F 1 "0.1u" H 9358 3095 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9450 3050 50  0001 C CNN
+F 3 "~" H 9450 3050 50  0001 C CNN
+	1    9450 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5BF71782
+P 9450 3150
+F 0 "#PWR02" H 9450 2900 50  0001 C CNN
+F 1 "GND" H 9455 2977 50  0001 C CNN
+F 2 "" H 9450 3150 50  0001 C CNN
+F 3 "" H 9450 3150 50  0001 C CNN
+	1    9450 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J105
+U 1 1 5BF724E8
+P 10100 3600
+F 0 "J105" H 10072 3530 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 10072 3621 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10100 3600 50  0001 C CNN
+F 3 "~" H 10100 3600 50  0001 C CNN
+	1    10100 3600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9450 2950 9450 2900
+Wire Wire Line
+	9450 2900 9850 2900
+Wire Wire Line
+	9100 2850 9100 2900
+Wire Wire Line
+	9100 2900 9450 2900
+Connection ~ 9100 2900
+Wire Wire Line
+	9100 2900 9100 2950
+Connection ~ 9450 2900
+Text Label 9600 2900 0    50   ~ 0
+VMEAS
+Text Label 9600 3500 0    50   ~ 0
+IMEAS
+Wire Wire Line
+	9900 3600 9850 3600
+Wire Wire Line
+	9850 3600 9850 2900
 $EndSCHEMATC
