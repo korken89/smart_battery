@@ -2,3 +2,7 @@
 	path = sepic_charger/kicad_libs
 	url = https://github.com/korken89/kicad_libs.git
 	branch = master
+[submodule "buck_charger/kicad_libs"]
+	path = buck_charger/kicad_libs
+	url = https://github.com/korken89/kicad_libs
+	branch = master
