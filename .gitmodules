@@ -6,3 +6,7 @@
 	path = buck_charger/kicad_libs
 	url = https://github.com/korken89/kicad_libs
 	branch = master
+[submodule "kicad_libs"]
+	path = kicad_libs
+	url = https://github.com/korken89/kicad_libs
+	branch = master
