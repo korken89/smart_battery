@@ -88,25 +88,25 @@ Text Label 6950 4500 2    50   ~ 0
 TX
 Text Label 6950 4600 2    50   ~ 0
 RX
-Text Label 2950 2050 0    50   ~ 0
+Text Label 3050 2050 0    50   ~ 0
 VCELL1
-Text Label 2950 2150 0    50   ~ 0
+Text Label 3050 2150 0    50   ~ 0
 VCELL2
-Text Label 2950 2250 0    50   ~ 0
+Text Label 3050 2250 0    50   ~ 0
 VCELL3
-Text Label 2950 2350 0    50   ~ 0
+Text Label 3050 2350 0    50   ~ 0
 VCELL4
-Text Label 2950 4650 0    50   ~ 0
+Text Label 3050 4650 0    50   ~ 0
 I_CHG
-Text Label 2950 4750 0    50   ~ 0
+Text Label 3050 4750 0    50   ~ 0
 VSET
-Text Label 2950 3050 0    50   ~ 0
+Text Label 3050 3050 0    50   ~ 0
 BAL1
-Text Label 2950 3150 0    50   ~ 0
+Text Label 3050 3150 0    50   ~ 0
 BAL2
-Text Label 2950 3250 0    50   ~ 0
+Text Label 3050 3250 0    50   ~ 0
 BAL3
-Text Label 2950 3350 0    50   ~ 0
+Text Label 3050 3350 0    50   ~ 0
 BAL4
 Text Label 8050 3700 0    50   ~ 0
 VIN_CHG_MEAS
@@ -139,14 +139,14 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5C2E7B57
-P 2950 3650
+P 3050 3650
 AR Path="/5C163DDA/5C2E7B57" Ref="#PWR?"  Part="1" 
 AR Path="/5C2E7B57" Ref="#PWR0103"  Part="1" 
-F 0 "#PWR0103" H 2950 3400 50  0001 C CNN
-F 1 "GND" H 2955 3477 50  0001 C CNN
-F 2 "" H 2950 3650 50  0001 C CNN
-F 3 "" H 2950 3650 50  0001 C CNN
-	1    2950 3650
+F 0 "#PWR0103" H 3050 3400 50  0001 C CNN
+F 1 "GND" H 3055 3477 50  0001 C CNN
+F 2 "" H 3050 3650 50  0001 C CNN
+F 3 "" H 3050 3650 50  0001 C CNN
+	1    3050 3650
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -166,14 +166,14 @@ $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 5C2E815B
-P 6850 3200
+P 6500 3200
 AR Path="/5C163DDA/5C2E815B" Ref="C?"  Part="1" 
 AR Path="/5C2E815B" Ref="C108"  Part="1" 
-F 0 "C108" V 7079 3200 50  0000 C CNN
-F 1 "0.1u" V 6988 3200 50  0000 C CNN
-F 2 "passive:C_0402_1005Metric_Rounded" H 6850 3200 50  0001 C CNN
-F 3 "~" H 6850 3200 50  0001 C CNN
-	1    6850 3200
+F 0 "C108" V 6729 3200 50  0000 C CNN
+F 1 "0.1u" V 6638 3200 50  0000 C CNN
+F 2 "passive:C_0402_1005Metric_Rounded" H 6500 3200 50  0001 C CNN
+F 3 "~" H 6500 3200 50  0001 C CNN
+	1    6500 3200
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -181,7 +181,7 @@ L Device:Ferrite_Bead_Small FB101
 U 1 1 5C2E83CA
 P 9750 2200
 F 0 "FB101" V 9513 2200 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 9604 2200 50  0000 C CNN
+F 1 "BKH1005LM182-T" V 9604 2200 50  0000 C CNN
 F 2 "passive:R_0402_1005Metric_Rounded" V 9680 2200 50  0001 C CNN
 F 3 "~" H 9750 2200 50  0001 C CNN
 	1    9750 2200
@@ -514,14 +514,14 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5C2F00B4
-P 6750 3200
+P 6400 3200
 AR Path="/5C163DDA/5C2F00B4" Ref="#PWR?"  Part="1" 
 AR Path="/5C2F00B4" Ref="#PWR0120"  Part="1" 
-F 0 "#PWR0120" H 6750 2950 50  0001 C CNN
-F 1 "GND" H 6755 3027 50  0001 C CNN
-F 2 "" H 6750 3200 50  0001 C CNN
-F 3 "" H 6750 3200 50  0001 C CNN
-	1    6750 3200
+F 0 "#PWR0120" H 6400 2950 50  0001 C CNN
+F 1 "GND" H 6405 3027 50  0001 C CNN
+F 2 "" H 6400 3200 50  0001 C CNN
+F 3 "" H 6400 3200 50  0001 C CNN
+	1    6400 3200
 	0    1    1    0   
 $EndComp
 $Comp
@@ -662,11 +662,11 @@ Wire Wire Line
 Connection ~ 9350 1000
 Text Label 8900 1000 2    50   ~ 0
 AMP_PWR
-Text Label 2950 4950 0    50   ~ 0
+Text Label 3050 4950 0    50   ~ 0
 AMP_PWR
-Text Label 2950 3550 0    50   ~ 0
+Text Label 3050 3550 0    50   ~ 0
 AMP_PWR
-Text Label 8050 4600 0    50   ~ 0
+Text Label 8050 4400 0    50   ~ 0
 AMPS_ONOFF
 $Comp
 L Device:Thermistor TH103
@@ -1043,7 +1043,7 @@ Wire Wire Line
 Connection ~ 5650 900 
 Wire Wire Line
 	5650 900  5750 900 
-Text Label 2950 4450 0    50   ~ 0
+Text Label 3050 4450 0    50   ~ 0
 DCDC_ENABLE
 Text Label 8050 4700 0    50   ~ 0
 DCDC_ENABLE
@@ -1131,19 +1131,19 @@ Text Label 9750 4250 0    50   ~ 0
 CELL4
 Text Label 9750 4150 0    50   ~ 0
 CELL3
-Text Label 3500 900  2    50   ~ 0
+Text Label 2500 900  2    50   ~ 0
 BATTERY
-Text Label 2950 4150 0    50   ~ 0
+Text Label 3050 4150 0    50   ~ 0
 VIN_CHG
-Text Label 2950 4250 0    50   ~ 0
+Text Label 3050 4250 0    50   ~ 0
 BATTERY
-Text Label 2950 2550 0    50   ~ 0
+Text Label 3050 2550 0    50   ~ 0
 CELL1
-Text Label 2950 2650 0    50   ~ 0
+Text Label 3050 2650 0    50   ~ 0
 CELL2
-Text Label 2950 2850 0    50   ~ 0
+Text Label 3050 2850 0    50   ~ 0
 CELL4
-Text Label 2950 2750 0    50   ~ 0
+Text Label 3050 2750 0    50   ~ 0
 CELL3
 Text Label 5350 6600 0    50   ~ 0
 VIN_CHG
@@ -1180,8 +1180,6 @@ Connection ~ 9900 3000
 Wire Wire Line
 	9900 3000 10050 3000
 NoConn ~ 6950 4700
-NoConn ~ 8050 4400
-NoConn ~ 8050 4500
 Text Label 9750 4650 0    50   ~ 0
 TX
 Text Label 9750 4550 0    50   ~ 0
@@ -1365,4 +1363,67 @@ Wire Wire Line
 	6200 5000 6200 4400
 Wire Wire Line
 	6200 4400 6950 4400
+Wire Wire Line
+	2950 4150 3050 4150
+Wire Wire Line
+	3050 4250 2950 4250
+Wire Wire Line
+	2950 4450 3050 4450
+Wire Wire Line
+	3050 4650 2950 4650
+Wire Wire Line
+	2950 4750 3050 4750
+Wire Wire Line
+	3050 4950 2950 4950
+Wire Wire Line
+	2950 2050 3050 2050
+Wire Wire Line
+	3050 2150 2950 2150
+Wire Wire Line
+	2950 2250 3050 2250
+Wire Wire Line
+	3050 2350 2950 2350
+Wire Wire Line
+	2950 2550 3050 2550
+Wire Wire Line
+	3050 2650 2950 2650
+Wire Wire Line
+	2950 2750 3050 2750
+Wire Wire Line
+	3050 2850 2950 2850
+Wire Wire Line
+	2950 3050 3050 3050
+Wire Wire Line
+	3050 3150 2950 3150
+Wire Wire Line
+	2950 3250 3050 3250
+Wire Wire Line
+	3050 3350 2950 3350
+Wire Wire Line
+	3050 3550 2950 3550
+Wire Wire Line
+	2950 3650 3050 3650
+Wire Wire Line
+	2500 900  2750 900 
+$Comp
+L Device:Ferrite_Bead_Small FB102
+U 1 1 5C35F7C2
+P 2850 900
+F 0 "FB102" V 2613 900 50  0000 C CNN
+F 1 "BKH1005LM182-T" V 2704 900 50  0000 C CNN
+F 2 "passive:R_0402_1005Metric_Rounded" V 2780 900 50  0001 C CNN
+F 3 "~" H 2850 900 50  0001 C CNN
+	1    2850 900 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2950 900  3500 900 
+Text Label 8050 4500 0    50   ~ 0
+SWDIO
+Text Label 8050 4600 0    50   ~ 0
+SWCLK
+Wire Wire Line
+	6600 3200 6950 3200
+Text Label 6700 3200 0    50   ~ 0
+RST
 $EndSCHEMATC

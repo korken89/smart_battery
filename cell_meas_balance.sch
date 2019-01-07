@@ -219,62 +219,6 @@ F 3 "" H 5250 2150 50  0001 C CNN
 	1    5250 2150
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Opamp_Quad_Generic U201
-U 1 1 5C18CBEE
-P 6700 4600
-F 0 "U201" H 6700 4967 50  0000 C CNN
-F 1 "TSV914IPT" H 6700 4876 50  0000 C CNN
-F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 6700 4600 50  0001 C CNN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/68/e5/70/49/1a/0d/47/dd/CD00127596.pdf/files/CD00127596.pdf/jcr:content/translations/en.CD00127596.pdf" H 6700 4600 50  0001 C CNN
-	1    6700 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Opamp_Quad_Generic U201
-U 2 1 5C18CC44
-P 6700 3750
-F 0 "U201" H 6700 4117 50  0000 C CNN
-F 1 "TSV914IPT" H 6700 4026 50  0000 C CNN
-F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 6700 3750 50  0001 C CNN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/68/e5/70/49/1a/0d/47/dd/CD00127596.pdf/files/CD00127596.pdf/jcr:content/translations/en.CD00127596.pdf" H 6700 3750 50  0001 C CNN
-	2    6700 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Opamp_Quad_Generic U201
-U 3 1 5C18CCDB
-P 6700 2900
-F 0 "U201" H 6700 3267 50  0000 C CNN
-F 1 "TSV914IPT" H 6700 3176 50  0000 C CNN
-F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 6700 2900 50  0001 C CNN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/68/e5/70/49/1a/0d/47/dd/CD00127596.pdf/files/CD00127596.pdf/jcr:content/translations/en.CD00127596.pdf" H 6700 2900 50  0001 C CNN
-	3    6700 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Opamp_Quad_Generic U201
-U 4 1 5C18CD97
-P 6700 2000
-F 0 "U201" H 6700 2367 50  0000 C CNN
-F 1 "TSV914IPT" H 6700 2276 50  0000 C CNN
-F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 6700 2000 50  0001 C CNN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/68/e5/70/49/1a/0d/47/dd/CD00127596.pdf/files/CD00127596.pdf/jcr:content/translations/en.CD00127596.pdf" H 6700 2000 50  0001 C CNN
-F 4 "TSV914IPT" H 6700 2000 50  0001 C CNN "MPN"
-	4    6700 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Opamp_Quad_Generic U201
-U 5 1 5C18CE32
-P 5600 6500
-F 0 "U201" H 5558 6546 50  0000 L CNN
-F 1 "TSV914IPT" H 5558 6455 50  0000 L CNN
-F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 5600 6500 50  0001 C CNN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/68/e5/70/49/1a/0d/47/dd/CD00127596.pdf/files/CD00127596.pdf/jcr:content/translations/en.CD00127596.pdf" H 5600 6500 50  0001 C CNN
-	5    5600 6500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5600 1900 6400 1900
 Wire Wire Line
@@ -441,24 +385,20 @@ Connection ~ 5600 1900
 $Comp
 L Device:C_Small C?
 U 1 1 5C195C2D
-P 5100 6500
+P 4300 6500
 AR Path="/5C163DDA/5C195C2D" Ref="C?"  Part="1" 
 AR Path="/5C1870E7/5C195C2D" Ref="C213"  Part="1" 
-F 0 "C213" H 5008 6454 50  0000 R CNN
-F 1 "0.1u" H 5008 6545 50  0000 R CNN
-F 2 "passive:C_0402_1005Metric_Rounded" H 5100 6500 50  0001 C CNN
-F 3 "~" H 5100 6500 50  0001 C CNN
-	1    5100 6500
+F 0 "C213" H 4208 6454 50  0000 R CNN
+F 1 "0.1u" H 4208 6545 50  0000 R CNN
+F 2 "passive:C_0402_1005Metric_Rounded" H 4300 6500 50  0001 C CNN
+F 3 "~" H 4300 6500 50  0001 C CNN
+	1    4300 6500
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5500 6200 5100 6200
+	4300 6200 4300 6400
 Wire Wire Line
-	5100 6200 5100 6400
-Wire Wire Line
-	5100 6600 5100 6800
-Wire Wire Line
-	5100 6800 5500 6800
+	4300 6600 4300 6800
 Text HLabel 7350 4600 2    50   Input ~ 0
 VCELL1_MEAS
 Text HLabel 7350 3750 2    50   Input ~ 0
@@ -467,12 +407,6 @@ Text HLabel 7350 2900 2    50   Input ~ 0
 VCELL3_MEAS
 Text HLabel 7350 2000 2    50   Input ~ 0
 VCELL4_MEAS
-Wire Wire Line
-	5500 6200 6200 6200
-Connection ~ 5500 6200
-Wire Wire Line
-	5500 6800 6200 6800
-Connection ~ 5500 6800
 $Comp
 L power:GND #PWR?
 U 1 1 5C2D33AF
@@ -1044,13 +978,13 @@ F 3 "~" H 3500 4850 50  0001 C CNN
 	1    3500 4850
 	1    0    0    -1  
 $EndComp
-Text HLabel 2050 4850 0    50   Input ~ 0
+Text HLabel 1950 4850 0    50   Input ~ 0
 BAL1_PWM
-Text HLabel 2050 4000 0    50   Input ~ 0
+Text HLabel 1950 4000 0    50   Input ~ 0
 BAL2_PWM
-Text HLabel 2050 3150 0    50   Input ~ 0
+Text HLabel 1950 3150 0    50   Input ~ 0
 BAL3_PWM
-Text HLabel 2050 2250 0    50   Input ~ 0
+Text HLabel 1950 2250 0    50   Input ~ 0
 BAL4_PWM
 Text HLabel 6150 7000 0    50   Input ~ 0
 GND
@@ -1095,4 +1029,117 @@ Wire Wire Line
 Connection ~ 5250 4200
 Wire Wire Line
 	5250 4200 5300 4200
+Wire Wire Line
+	2050 4850 1950 4850
+Wire Wire Line
+	1950 4000 2050 4000
+Wire Wire Line
+	2050 2250 1950 2250
+Wire Wire Line
+	2050 3150 1950 3150
+$Comp
+L Device:Opamp_Dual_Generic U202
+U 1 1 5C364DE0
+P 6700 2000
+F 0 "U202" H 6700 2367 50  0000 C CNN
+F 1 "TSV912IQ2T" H 6700 2276 50  0000 C CNN
+F 2 "Package_DFN_QFN:DFN-8-1EP_2x2mm_P0.45mm_EP0.64x1.38mm" H 6700 2000 50  0001 C CNN
+F 3 "~" H 6700 2000 50  0001 C CNN
+	1    6700 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Opamp_Dual_Generic U203
+U 1 1 5C364EBE
+P 6700 3750
+F 0 "U203" H 6700 4117 50  0000 C CNN
+F 1 "TSV912IQ2T" H 6700 4026 50  0000 C CNN
+F 2 "Package_DFN_QFN:DFN-8-1EP_2x2mm_P0.45mm_EP0.64x1.38mm" H 6700 3750 50  0001 C CNN
+F 3 "~" H 6700 3750 50  0001 C CNN
+	1    6700 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Opamp_Dual_Generic U202
+U 3 1 5C365005
+P 5250 6500
+F 0 "U202" H 5208 6546 50  0000 L CNN
+F 1 "TSV912IQ2T" H 5208 6455 50  0000 L CNN
+F 2 "Package_DFN_QFN:DFN-8-1EP_2x2mm_P0.45mm_EP0.64x1.38mm" H 5250 6500 50  0001 C CNN
+F 3 "~" H 5250 6500 50  0001 C CNN
+	3    5250 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Opamp_Dual_Generic U202
+U 2 1 5C3652FB
+P 6700 2900
+F 0 "U202" H 6700 3267 50  0000 C CNN
+F 1 "TSV912IQ2T" H 6700 3176 50  0000 C CNN
+F 2 "" H 6700 2900 50  0001 C CNN
+F 3 "~" H 6700 2900 50  0001 C CNN
+	2    6700 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Opamp_Dual_Generic U203
+U 3 1 5C365302
+P 5900 6500
+F 0 "U203" H 5858 6546 50  0000 L CNN
+F 1 "TSV912IQ2T" H 5858 6455 50  0000 L CNN
+F 2 "Package_DFN_QFN:DFN-8-1EP_2x2mm_P0.45mm_EP0.64x1.38mm" H 5900 6500 50  0001 C CNN
+F 3 "~" H 5900 6500 50  0001 C CNN
+	3    5900 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Opamp_Dual_Generic U203
+U 2 1 5C365309
+P 6700 4600
+F 0 "U203" H 6700 4967 50  0000 C CNN
+F 1 "TSV912IQ2T" H 6700 4876 50  0000 C CNN
+F 2 "Package_DFN_QFN:DFN-8-1EP_2x2mm_P0.45mm_EP0.64x1.38mm" H 6700 4600 50  0001 C CNN
+F 3 "~" H 6700 4600 50  0001 C CNN
+	2    6700 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 6800 4700 6800
+Wire Wire Line
+	4300 6200 4700 6200
+$Comp
+L Device:C_Small C?
+U 1 1 5C38473F
+P 4700 6500
+AR Path="/5C163DDA/5C38473F" Ref="C?"  Part="1" 
+AR Path="/5C1870E7/5C38473F" Ref="C214"  Part="1" 
+F 0 "C214" H 4608 6454 50  0000 R CNN
+F 1 "0.1u" H 4608 6545 50  0000 R CNN
+F 2 "passive:C_0402_1005Metric_Rounded" H 4700 6500 50  0001 C CNN
+F 3 "~" H 4700 6500 50  0001 C CNN
+	1    4700 6500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4700 6400 4700 6200
+Connection ~ 4700 6200
+Wire Wire Line
+	4700 6600 4700 6800
+Connection ~ 4700 6800
+Wire Wire Line
+	5800 6800 6200 6800
+Wire Wire Line
+	5800 6200 6200 6200
+Connection ~ 5150 6800
+Connection ~ 5150 6200
+Wire Wire Line
+	4700 6200 5150 6200
+Wire Wire Line
+	4700 6800 5150 6800
+Connection ~ 5800 6200
+Connection ~ 5800 6800
+Wire Wire Line
+	5150 6800 5800 6800
+Wire Wire Line
+	5150 6200 5800 6200
 $EndSCHEMATC
