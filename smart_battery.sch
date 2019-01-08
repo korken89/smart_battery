@@ -72,8 +72,6 @@ Text Label 8050 3900 0    50   ~ 0
 TEMP1
 Text Label 6950 3900 2    50   ~ 0
 TEMP2
-Text Label 6950 4000 2    50   ~ 0
-TEMP3
 Text Label 8050 3600 0    50   ~ 0
 VSET
 Text Label 8050 4000 0    50   ~ 0
@@ -488,27 +486,27 @@ VIN_CHG_MEAS
 $Comp
 L Device:R_Small R?
 U 1 1 5C2EF7B6
-P 6850 3400
+P 6500 3400
 AR Path="/5C163DDA/5C2EF7B6" Ref="R?"  Part="1" 
 AR Path="/5C2EF7B6" Ref="R106"  Part="1" 
-F 0 "R106" V 6954 3400 50  0000 C CNN
-F 1 "18k" V 7045 3400 50  0000 C CNN
-F 2 "passive:R_0402_1005Metric_Rounded" H 6850 3400 50  0001 C CNN
-F 3 "~" H 6850 3400 50  0001 C CNN
-	1    6850 3400
+F 0 "R106" V 6604 3400 50  0000 C CNN
+F 1 "18k" V 6695 3400 50  0000 C CNN
+F 2 "passive:R_0402_1005Metric_Rounded" H 6500 3400 50  0001 C CNN
+F 3 "~" H 6500 3400 50  0001 C CNN
+	1    6500 3400
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5C2F0010
-P 6750 3400
+P 6400 3400
 AR Path="/5C163DDA/5C2F0010" Ref="#PWR?"  Part="1" 
 AR Path="/5C2F0010" Ref="#PWR0121"  Part="1" 
-F 0 "#PWR0121" H 6750 3150 50  0001 C CNN
-F 1 "GND" H 6755 3227 50  0001 C CNN
-F 2 "" H 6750 3400 50  0001 C CNN
-F 3 "" H 6750 3400 50  0001 C CNN
-	1    6750 3400
+F 0 "#PWR0121" H 6400 3150 50  0001 C CNN
+F 1 "GND" H 6405 3227 50  0001 C CNN
+F 2 "" H 6400 3400 50  0001 C CNN
+F 3 "" H 6400 3400 50  0001 C CNN
+	1    6400 3400
 	0    1    1    0   
 $EndComp
 $Comp
@@ -527,43 +525,43 @@ $EndComp
 $Comp
 L Device:Resonator_Small Y101
 U 1 1 5C2F79CE
-P 6150 3650
-F 0 "Y101" V 5845 3600 50  0000 C CNN
-F 1 "PRQC8.00CR1010V00L" V 5936 3600 50  0000 C CNN
-F 2 "crystals:Resonator_3pin_3.2x1.3mm" H 6125 3650 50  0001 C CNN
-F 3 "~" H 6125 3650 50  0001 C CNN
-	1    6150 3650
+P 5850 3650
+F 0 "Y101" V 5545 3600 50  0000 C CNN
+F 1 "PRQC8.00CR1010V00L" V 5636 3600 50  0000 C CNN
+F 2 "crystals:Resonator_3pin_3.2x1.3mm" H 5825 3650 50  0001 C CNN
+F 3 "~" H 5825 3650 50  0001 C CNN
+	1    5850 3650
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5C2F7BA6
-P 5950 3650
+P 5650 3650
 AR Path="/5C163DDA/5C2F7BA6" Ref="#PWR?"  Part="1" 
 AR Path="/5C2F7BA6" Ref="#PWR0117"  Part="1" 
-F 0 "#PWR0117" H 5950 3400 50  0001 C CNN
-F 1 "GND" H 5955 3477 50  0001 C CNN
-F 2 "" H 5950 3650 50  0001 C CNN
-F 3 "" H 5950 3650 50  0001 C CNN
-	1    5950 3650
+F 0 "#PWR0117" H 5650 3400 50  0001 C CNN
+F 1 "GND" H 5655 3477 50  0001 C CNN
+F 2 "" H 5650 3650 50  0001 C CNN
+F 3 "" H 5650 3650 50  0001 C CNN
+	1    5650 3650
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6250 3550 6950 3550
+	5950 3550 6950 3550
 Wire Wire Line
 	6950 3550 6950 3600
 Wire Wire Line
 	6950 3700 6950 3750
 Wire Wire Line
-	6950 3750 6250 3750
+	6950 3750 5950 3750
 $Comp
 L Device:Q_PMOS_GSD Q101
 U 1 1 5C2F952E
 P 9700 1100
 F 0 "Q101" V 10043 1100 50  0000 C CNN
-F 1 "SSM3J35AMFV" V 9952 1100 50  0000 C CNN
+F 1 "RZM001P02T2L" V 9952 1100 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-723" H 9900 1200 50  0001 C CNN
-F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=56960&prodName=SSM3J35AMFV" H 9700 1100 50  0001 C CNN
+F 3 "https://www.rohm.com/datasheet/RZM001P02/rzm001p02t2l-e" H 9700 1100 50  0001 C CNN
 	1    9700 1100
 	0    -1   -1   0   
 $EndComp
@@ -669,17 +667,6 @@ AMP_PWR
 Text Label 8050 4400 0    50   ~ 0
 AMPS_ONOFF
 $Comp
-L Device:Thermistor TH103
-U 1 1 5C2FFF0D
-P 4000 7100
-F 0 "TH103" H 4105 7146 50  0000 L CNN
-F 1 "10k" H 4105 7055 50  0000 L CNN
-F 2 "passive:R_0402_1005Metric_Rounded" H 4000 7100 50  0001 C CNN
-F 3 "~" H 4000 7100 50  0001 C CNN
-	1    4000 7100
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Thermistor TH102
 U 1 1 5C300097
 P 3100 7100
@@ -728,19 +715,6 @@ F 3 "~" H 3100 6700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R?
-U 1 1 5C30052E
-P 4000 6700
-AR Path="/5C163DDA/5C30052E" Ref="R?"  Part="1" 
-AR Path="/5C30052E" Ref="R103"  Part="1" 
-F 0 "R103" V 4104 6700 50  0000 C CNN
-F 1 "18k" V 4195 6700 50  0000 C CNN
-F 2 "passive:R_0402_1005Metric_Rounded" H 4000 6700 50  0001 C CNN
-F 3 "~" H 4000 6700 50  0001 C CNN
-	1    4000 6700
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5C3005CE
 P 2250 7300
@@ -768,31 +742,12 @@ F 3 "" H 3100 7300 50  0001 C CNN
 	1    3100 7300
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C30065C
-P 4000 7300
-AR Path="/5C163DDA/5C30065C" Ref="#PWR?"  Part="1" 
-AR Path="/5C1870E7/5C30065C" Ref="#PWR?"  Part="1" 
-AR Path="/5C30065C" Ref="#PWR0107"  Part="1" 
-F 0 "#PWR0107" H 4000 7050 50  0001 C CNN
-F 1 "GND" H 4005 7127 50  0001 C CNN
-F 2 "" H 4000 7300 50  0001 C CNN
-F 3 "" H 4000 7300 50  0001 C CNN
-	1    4000 7300
-	1    0    0    -1  
-$EndComp
 Text Label 1800 6500 2    50   ~ 0
 AMP_PWR
 Wire Wire Line
 	1800 6500 2250 6500
 Wire Wire Line
-	4000 6500 4000 6600
-Wire Wire Line
 	3100 6600 3100 6500
-Connection ~ 3100 6500
-Wire Wire Line
-	3100 6500 4000 6500
 Wire Wire Line
 	2250 6600 2250 6500
 Connection ~ 2250 6500
@@ -802,8 +757,6 @@ Wire Wire Line
 	2250 6900 2250 6850
 Wire Wire Line
 	3100 6900 3100 6850
-Wire Wire Line
-	4000 6900 4000 6850
 $Comp
 L power:GND #PWR?
 U 1 1 5C3060E9
@@ -860,34 +813,6 @@ F 3 "~" H 3450 7200 50  0001 C CNN
 	1    3450 7200
 	-1   0    0    1   
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C307523
-P 4350 7300
-AR Path="/5C163DDA/5C307523" Ref="#PWR?"  Part="1" 
-AR Path="/5C1870E7/5C307523" Ref="#PWR?"  Part="1" 
-AR Path="/5C307523" Ref="#PWR0109"  Part="1" 
-F 0 "#PWR0109" H 4350 7050 50  0001 C CNN
-F 1 "GND" H 4355 7127 50  0001 C CNN
-F 2 "" H 4350 7300 50  0001 C CNN
-F 3 "" H 4350 7300 50  0001 C CNN
-	1    4350 7300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 5C307529
-P 4350 7200
-AR Path="/5C163DDA/5C307529" Ref="C?"  Part="1" 
-AR Path="/5C1870E7/5C307529" Ref="C?"  Part="1" 
-AR Path="/5C307529" Ref="C104"  Part="1" 
-F 0 "C104" H 4258 7154 50  0000 R CNN
-F 1 "0.1u" H 4258 7245 50  0000 R CNN
-F 2 "passive:C_0402_1005Metric_Rounded" H 4350 7200 50  0001 C CNN
-F 3 "~" H 4350 7200 50  0001 C CNN
-	1    4350 7200
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	2250 6850 2600 6850
 Wire Wire Line
@@ -902,19 +827,10 @@ Wire Wire Line
 Connection ~ 3100 6850
 Wire Wire Line
 	3100 6850 3100 6800
-Wire Wire Line
-	4000 6850 4350 6850
-Wire Wire Line
-	4350 6850 4350 7100
-Connection ~ 4000 6850
-Wire Wire Line
-	4000 6850 4000 6800
 Text Label 2350 6850 0    50   ~ 0
 TEMP1
 Text Label 3200 6850 0    50   ~ 0
 TEMP2
-Text Label 4100 6850 0    50   ~ 0
-TEMP3
 $Comp
 L ldo:NCP716 U101
 U 1 1 5C311B1C
@@ -1053,7 +969,7 @@ U 1 1 5C3185A6
 P 9550 2900
 F 0 "J101" H 9656 2987 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 9656 2987 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9550 2900 50  0001 C CNN
+F 2 "connectors:1x2_2.54mm" H 9550 2900 50  0001 C CNN
 F 3 "~" H 9550 2900 50  0001 C CNN
 	1    9550 2900
 	1    0    0    -1  
@@ -1064,7 +980,7 @@ U 1 1 5C318871
 P 9550 3400
 F 0 "J102" H 9656 3487 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 9656 3487 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9550 3400 50  0001 C CNN
+F 2 "connectors:1x2_2.54mm" H 9550 3400 50  0001 C CNN
 F 3 "~" H 9550 3400 50  0001 C CNN
 	1    9550 3400
 	1    0    0    -1  
@@ -1075,7 +991,7 @@ U 1 1 5C319120
 P 9550 4050
 F 0 "J103" H 9656 4337 50  0000 C CNN
 F 1 "Conn_01x05_Male" H 9656 4337 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 9550 4050 50  0001 C CNN
+F 2 "connectors:1x5_2.54mm" H 9550 4050 50  0001 C CNN
 F 3 "~" H 9550 4050 50  0001 C CNN
 	1    9550 4050
 	1    0    0    -1  
@@ -1119,7 +1035,7 @@ F 3 "" H 9750 3850 50  0001 C CNN
 	1    9750 3850
 	0    -1   -1   0   
 $EndComp
-Text Label 9750 3500 0    50   ~ 0
+Text Label 9850 3500 0    50   ~ 0
 VIN_CHG
 Text Label 10050 3000 0    50   ~ 0
 BATTERY
@@ -1190,7 +1106,7 @@ U 1 1 5C3DF10D
 P 9550 4550
 F 0 "J104" H 9656 4637 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 9656 4637 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9550 4550 50  0001 C CNN
+F 2 "connectors:1x2_2.54mm" H 9550 4550 50  0001 C CNN
 F 3 "~" H 9550 4550 50  0001 C CNN
 	1    9550 4550
 	1    0    0    -1  
@@ -1426,4 +1342,19 @@ Wire Wire Line
 	6600 3200 6950 3200
 Text Label 6700 3200 0    50   ~ 0
 RST
+Wire Wire Line
+	9850 3500 9750 3500
+NoConn ~ 6950 4000
+Text Label 6400 4100 0    50   ~ 0
+LED1
+Text Label 6400 4200 0    50   ~ 0
+LED2
+Text Label 6400 4300 0    50   ~ 0
+LED3
+Text Label 6400 4400 0    50   ~ 0
+LED4
+Wire Wire Line
+	6600 3400 6950 3400
+Text Label 6650 3400 0    50   ~ 0
+BOOT0
 $EndSCHEMATC

@@ -23,4 +23,5 @@
   (lib (name son)(type KiCad)(uri ${KIPRJMOD}/kicad_libs/footprints/son.pretty)(options "")(descr ""))
   (lib (name sot)(type KiCad)(uri ${KIPRJMOD}/kicad_libs/footprints/sot.pretty)(options "")(descr ""))
   (lib (name usb)(type KiCad)(uri ${KIPRJMOD}/kicad_libs/footprints/usb.pretty)(options "")(descr ""))
+  (lib (name inductor)(type KiCad)(uri ${KIPRJMOD}/kicad_libs/footprints/inductor.pretty)(options "")(descr ""))
 )

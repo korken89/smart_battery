@@ -438,7 +438,7 @@ AR Path="/5C16D366/5C2DE9EA" Ref="D?"  Part="1"
 AR Path="/5C1870E7/5C2DE9EA" Ref="D201"  Part="1" 
 F 0 "D201" V 2996 2329 50  0000 L CNN
 F 1 "BAT54SDW" V 2905 2329 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 2950 1750 50  0001 C CNN
+F 2 "sot:SOT-363" H 2950 1750 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 2200 1850 50  0001 C CNN
 	1    2950 2250
 	0    1    -1   0   
@@ -451,7 +451,7 @@ AR Path="/5C16D366/5C2DE9F1" Ref="D?"  Part="2"
 AR Path="/5C1870E7/5C2DE9F1" Ref="D201"  Part="2" 
 F 0 "D201" V 2996 3229 50  0000 L CNN
 F 1 "BAT54SDW" V 2905 3229 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 2950 2650 50  0001 C CNN
+F 2 "sot:SOT-363" H 2950 2650 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 2200 2750 50  0001 C CNN
 	2    2950 3150
 	0    1    -1   0   
@@ -464,7 +464,7 @@ AR Path="/5C16D366/5C2DE9F8" Ref="D?"  Part="1"
 AR Path="/5C1870E7/5C2DE9F8" Ref="D202"  Part="1" 
 F 0 "D202" V 2996 4079 50  0000 L CNN
 F 1 "BAT54SDW" V 2905 4079 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 2950 3500 50  0001 C CNN
+F 2 "sot:SOT-363" H 2950 3500 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 2200 3600 50  0001 C CNN
 	1    2950 4000
 	0    1    -1   0   
@@ -477,7 +477,7 @@ AR Path="/5C16D366/5C2DE9FF" Ref="D?"  Part="2"
 AR Path="/5C1870E7/5C2DE9FF" Ref="D202"  Part="2" 
 F 0 "D202" V 2996 4929 50  0000 L CNN
 F 1 "BAT54SDW" V 2905 4929 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 2950 4350 50  0001 C CNN
+F 2 "sot:SOT-363" H 2950 4350 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 2200 4450 50  0001 C CNN
 	2    2950 4850
 	0    1    -1   0   
@@ -490,7 +490,7 @@ AR Path="/5C16D366/5C2DEA06" Ref="Q?"  Part="1"
 AR Path="/5C1870E7/5C2DEA06" Ref="Q201"  Part="1" 
 F 0 "Q201" H 4456 2146 50  0000 L CNN
 F 1 "PMGD280UN,115" H 4456 2055 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 4450 2025 50  0001 L CIN
+F 2 "sot:SOT-363" H 4450 2025 50  0001 L CIN
 F 3 "http://www.gneic.com/product/datasheet/FDG6335N-1122853.pdf" H 4250 2100 50  0001 L CNN
 	1    4250 2100
 	1    0    0    -1  
@@ -516,7 +516,7 @@ AR Path="/5C16D366/5C2DEA14" Ref="Q?"  Part="1"
 AR Path="/5C1870E7/5C2DEA14" Ref="Q202"  Part="1" 
 F 0 "Q202" H 4456 3896 50  0000 L CNN
 F 1 "PMGD280UN,115" H 4456 3805 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 4450 3775 50  0001 L CIN
+F 2 "sot:SOT-363" H 4450 3775 50  0001 L CIN
 F 3 "http://www.gneic.com/product/datasheet/FDG6335N-1122853.pdf" H 4250 3850 50  0001 L CNN
 	1    4250 3850
 	1    0    0    -1  
