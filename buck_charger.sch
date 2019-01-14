@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:smart_battery-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -50,17 +49,6 @@ F 4 "MBR0580S1-7" H 3850 2100 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0309
-U 1 1 5BEB3488
-P 6500 3050
-F 0 "#PWR0309" H 6500 2800 50  0001 C CNN
-F 1 "GND" H 6505 2877 50  0001 C CNN
-F 2 "" H 6500 3050 50  0001 C CNN
-F 3 "" H 6500 3050 50  0001 C CNN
-	1    6500 3050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C302
 U 1 1 5BEB34A3
 P 2700 2950
@@ -82,31 +70,6 @@ Wire Wire Line
 	2900 2750 2700 2750
 Connection ~ 2900 2750
 $Comp
-L power:GND #PWR0302
-U 1 1 5BEB41A9
-P 2700 3050
-F 0 "#PWR0302" H 2700 2800 50  0001 C CNN
-F 1 "GND" H 2705 2877 50  0001 C CNN
-F 2 "" H 2700 3050 50  0001 C CNN
-F 3 "" H 2700 3050 50  0001 C CNN
-	1    2700 3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R307
-U 1 1 5BEB6608
-P 7650 2750
-F 0 "R307" V 7454 2750 50  0000 C CNN
-F 1 "50m" V 7545 2750 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 7650 2750 50  0001 C CNN
-F 3 "https://www.seielect.com/Catalog/SEI-CSR_CSRN.pdf" H 7650 2750 50  0001 C CNN
-F 4 "CSR1206FT50L0" H 7650 2750 50  0001 C CNN "MPN"
-	1    7650 2750
-	0    1    1    0   
-$EndComp
-Connection ~ 7550 2750
-Connection ~ 7750 2750
-$Comp
 L Device:C_Small C305
 U 1 1 5BEBA1D1
 P 6200 2950
@@ -117,46 +80,11 @@ F 3 "~" H 6200 2950 50  0001 C CNN
 	1    6200 2950
 	-1   0    0    1   
 $EndComp
-$Comp
-L power:GND #PWR0308
-U 1 1 5BEBA207
-P 6200 3050
-F 0 "#PWR0308" H 6200 2800 50  0001 C CNN
-F 1 "GND" H 6205 2877 50  0001 C CNN
-F 2 "" H 6200 3050 50  0001 C CNN
-F 3 "" H 6200 3050 50  0001 C CNN
-	1    6200 3050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6200 2850 6200 2750
 Connection ~ 6200 2750
 Wire Wire Line
 	6200 2750 6500 2750
-$Comp
-L Device:C_Small C307
-U 1 1 5BEBD578
-P 8300 3300
-F 0 "C307" H 8208 3254 50  0000 R CNN
-F 1 "0.1u" H 8208 3345 50  0000 R CNN
-F 2 "passive:C_0402_1005Metric_Rounded" H 8300 3300 50  0001 C CNN
-F 3 "~" H 8300 3300 50  0001 C CNN
-	1    8300 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0310
-U 1 1 5BEBD620
-P 8300 3200
-F 0 "#PWR0310" H 8300 2950 50  0001 C CNN
-F 1 "GND" H 8305 3027 50  0001 C CNN
-F 2 "" H 8300 3200 50  0001 C CNN
-F 3 "" H 8300 3200 50  0001 C CNN
-	1    8300 3200
-	-1   0    0    1   
-$EndComp
-Text Label 7100 2750 0    50   ~ 0
-CHG_OUT
 $Comp
 L Device:C_Small C304
 U 1 1 5BF56065
@@ -168,8 +96,6 @@ F 3 "~" H 4650 2750 50  0001 C CNN
 	1    4650 2750
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6500 2750 7550 2750
 $Comp
 L dc_dc_regulators:RT2862 U301
 U 1 1 5C114F28
@@ -182,24 +108,12 @@ F 4 "RT2862GSP" H 3550 2650 50  0001 C CNN "MPN"
 	1    3550 2650
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0304
-U 1 1 5C11583E
-P 3300 2950
-F 0 "#PWR0304" H 3300 2700 50  0001 C CNN
-F 1 "GND" H 3305 2777 50  0001 C CNN
-F 2 "" H 3300 2950 50  0001 C CNN
-F 3 "" H 3300 2950 50  0001 C CNN
-	1    3300 2950
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3350 2850 3300 2850
 Wire Wire Line
 	3300 2850 3300 2950
 Wire Wire Line
 	3350 2950 3300 2950
-Connection ~ 3300 2950
 Wire Wire Line
 	4550 2750 4250 2750
 Wire Wire Line
@@ -242,17 +156,6 @@ F 3 "~" H 4050 3500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0305
-U 1 1 5C119223
-P 4350 3500
-F 0 "#PWR0305" H 4350 3250 50  0001 C CNN
-F 1 "GND" H 4355 3327 50  0001 C CNN
-F 2 "" H 4350 3500 50  0001 C CNN
-F 3 "" H 4350 3500 50  0001 C CNN
-	1    4350 3500
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:R_Small R303
 U 1 1 5C1192A1
 P 4350 3150
@@ -261,17 +164,6 @@ F 1 "91k" H 4291 3195 50  0000 R CNN
 F 2 "passive:R_0402_1005Metric_Rounded" H 4350 3150 50  0001 C CNN
 F 3 "~" H 4350 3150 50  0001 C CNN
 	1    4350 3150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0306
-U 1 1 5C1192F1
-P 4450 3150
-F 0 "#PWR0306" H 4450 2900 50  0001 C CNN
-F 1 "GND" H 4455 2977 50  0001 C CNN
-F 2 "" H 4450 3150 50  0001 C CNN
-F 3 "" H 4450 3150 50  0001 C CNN
-	1    4450 3150
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -330,17 +222,6 @@ Text Label 4950 3050 0    50   ~ 0
 FB
 Wire Wire Line
 	5200 3200 5000 3200
-$Comp
-L power:GND #PWR0307
-U 1 1 5C11DBB3
-P 5550 3550
-F 0 "#PWR0307" H 5550 3300 50  0001 C CNN
-F 1 "GND" H 5555 3377 50  0001 C CNN
-F 2 "" H 5550 3550 50  0001 C CNN
-F 3 "" H 5550 3550 50  0001 C CNN
-	1    5550 3550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4000 2100 5550 2100
 Wire Wire Line
@@ -371,71 +252,12 @@ Wire Wire Line
 	3050 3150 3000 3150
 Wire Wire Line
 	3250 3150 3300 3150
-Wire Wire Line
-	7750 2750 8900 2750
 Text HLabel 2150 2750 0    50   Input ~ 0
 VIN_CHARGER
 Text HLabel 5000 3200 0    50   Input ~ 0
 VSET
-Text HLabel 8900 2750 2    50   Input ~ 0
+Text HLabel 7050 2750 2    50   Input ~ 0
 OUT_CHARGER
-Text HLabel 9300 3800 2    50   Input ~ 0
-IMEAS
-$Comp
-L Amplifier_Current:INA181 U302
-U 1 1 5C2D3EED
-P 8400 3800
-F 0 "U302" H 8400 4050 50  0000 L CNN
-F 1 "INA181" H 8400 3950 50  0000 L CNN
-F 2 "sot:SOT-23-6" H 8450 3850 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ina181.pdf" H 8550 3950 50  0001 C CNN
-F 4 "INA181A1IDBVT" H 8400 3800 50  0001 C CNN "MPN"
-	1    8400 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0311
-U 1 1 5C2D54AB
-P 8300 4100
-F 0 "#PWR0311" H 8300 3850 50  0001 C CNN
-F 1 "GND" H 8305 3927 50  0001 C CNN
-F 2 "" H 8300 4100 50  0001 C CNN
-F 3 "" H 8300 4100 50  0001 C CNN
-	1    8300 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0312
-U 1 1 5C2D54D8
-P 8500 4100
-F 0 "#PWR0312" H 8500 3850 50  0001 C CNN
-F 1 "GND" H 8505 3927 50  0001 C CNN
-F 2 "" H 8500 4100 50  0001 C CNN
-F 3 "" H 8500 4100 50  0001 C CNN
-	1    8500 4100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8300 3400 8300 3450
-Wire Wire Line
-	8300 3450 8650 3450
-Connection ~ 8300 3450
-Wire Wire Line
-	8300 3450 8300 3500
-Text HLabel 8650 3450 2    50   Input ~ 0
-AMP_V+
-Wire Wire Line
-	8700 3800 9300 3800
-Wire Wire Line
-	8100 3700 7550 3700
-Wire Wire Line
-	7550 2750 7550 3700
-Wire Wire Line
-	8100 3900 7750 3900
-Wire Wire Line
-	7750 2750 7750 3900
-Text Notes 8600 3950 0    50   ~ 0
-20V/V gain
 $Comp
 L Device:C_Small C301
 U 1 1 5C2DAE70
@@ -447,34 +269,12 @@ F 3 "~" H 2350 2950 50  0001 C CNN
 	1    2350 2950
 	-1   0    0    1   
 $EndComp
-$Comp
-L power:GND #PWR0301
-U 1 1 5C2DB858
-P 2350 3050
-F 0 "#PWR0301" H 2350 2800 50  0001 C CNN
-F 1 "GND" H 2355 2877 50  0001 C CNN
-F 2 "" H 2350 3050 50  0001 C CNN
-F 3 "" H 2350 3050 50  0001 C CNN
-	1    2350 3050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2350 2850 2350 2750
 Connection ~ 2350 2750
 Wire Wire Line
 	2350 2750 2150 2750
-$Comp
-L power:GND #PWR0313
-U 1 1 5C2F36D5
-P 9250 4350
-F 0 "#PWR0313" H 9250 4100 50  0001 C CNN
-F 1 "GND" H 9255 4177 50  0001 C CNN
-F 2 "" H 9250 4350 50  0001 C CNN
-F 3 "" H 9250 4350 50  0001 C CNN
-	1    9250 4350
-	0    1    1    0   
-$EndComp
-Text HLabel 9250 4350 2    50   Input ~ 0
+Text HLabel 7050 4050 2    50   Input ~ 0
 GND
 Wire Wire Line
 	3300 3150 3300 3500
@@ -487,15 +287,53 @@ Text HLabel 3150 3500 0    50   Input ~ 0
 ENABLE_DCDC
 Wire Wire Line
 	2900 2750 3350 2750
-$Comp
-L power:GND #PWR0303
-U 1 1 5C2F7E92
-P 3000 3150
-F 0 "#PWR0303" H 3000 2900 50  0001 C CNN
-F 1 "GND" H 3005 2977 50  0001 C CNN
-F 2 "" H 3000 3150 50  0001 C CNN
-F 3 "" H 3000 3150 50  0001 C CNN
-	1    3000 3150
-	0    1    1    0   
-$EndComp
+Wire Wire Line
+	6500 2750 7050 2750
+Wire Wire Line
+	7050 4050 6500 4050
+Wire Wire Line
+	6500 4050 6500 3050
+Wire Wire Line
+	6500 4050 6200 4050
+Wire Wire Line
+	6200 4050 6200 3050
+Connection ~ 6500 4050
+Wire Wire Line
+	6200 4050 5550 4050
+Wire Wire Line
+	5550 4050 5550 3550
+Connection ~ 6200 4050
+Wire Wire Line
+	5550 4050 4600 4050
+Wire Wire Line
+	4600 4050 4600 3500
+Wire Wire Line
+	4600 3150 4450 3150
+Connection ~ 5550 4050
+Wire Wire Line
+	4350 3500 4600 3500
+Connection ~ 4600 3500
+Wire Wire Line
+	4600 3500 4600 3150
+Wire Wire Line
+	3300 2950 3000 2950
+Wire Wire Line
+	3000 2950 3000 3150
+Connection ~ 3300 2950
+Wire Wire Line
+	3000 3150 2700 3150
+Wire Wire Line
+	2350 3150 2350 3050
+Connection ~ 3000 3150
+Wire Wire Line
+	2700 3050 2700 3150
+Connection ~ 2700 3150
+Wire Wire Line
+	2700 3150 2350 3150
+Wire Wire Line
+	4600 4050 2350 4050
+Wire Wire Line
+	2350 4050 2350 3150
+Connection ~ 4600 4050
+Connection ~ 2350 3150
 $EndSCHEMATC

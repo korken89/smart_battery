@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:smart_battery-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -503,7 +502,7 @@ AR Path="/5C16D366/5C2DEA0D" Ref="Q?"  Part="2"
 AR Path="/5C1870E7/5C2DEA0D" Ref="Q201"  Part="2" 
 F 0 "Q201" H 4456 3046 50  0000 L CNN
 F 1 "PMGD280UN,115" H 4456 2955 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 4450 2925 50  0001 L CIN
+F 2 "sot:SOT-363" H 4450 2925 50  0001 L CIN
 F 3 "http://www.gneic.com/product/datasheet/FDG6335N-1122853.pdf" H 4250 3000 50  0001 L CNN
 	2    4250 3000
 	1    0    0    -1  
@@ -529,7 +528,7 @@ AR Path="/5C16D366/5C2DEA1B" Ref="Q?"  Part="2"
 AR Path="/5C1870E7/5C2DEA1B" Ref="Q202"  Part="2" 
 F 0 "Q202" H 4456 4746 50  0000 L CNN
 F 1 "PMGD280UN,115" H 4456 4655 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 4450 4625 50  0001 L CIN
+F 2 "sot:SOT-363" H 4450 4625 50  0001 L CIN
 F 3 "http://www.gneic.com/product/datasheet/FDG6335N-1122853.pdf" H 4250 4700 50  0001 L CNN
 	2    4250 4700
 	1    0    0    -1  
