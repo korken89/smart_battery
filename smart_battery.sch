@@ -1034,7 +1034,6 @@ $EndComp
 Connection ~ 9900 3000
 Wire Wire Line
 	9900 3000 10050 3000
-NoConn ~ 6950 4100
 Text Label 9600 5200 2    50   ~ 0
 TX
 Text Label 9600 5300 2    50   ~ 0
@@ -1404,7 +1403,7 @@ Connection ~ 3350 5300
 Wire Wire Line
 	3350 5300 3350 5350
 Wire Wire Line
-	3750 5650 3850 5650
+	3750 5650 4250 5650
 Wire Wire Line
 	3150 5550 2750 5550
 Wire Wire Line
@@ -1428,7 +1427,7 @@ F 3 "" H 1850 5600 50  0001 C CNN
 	1    1850 5650
 	0    -1   -1   0   
 $EndComp
-Text Label 3850 5650 0    50   ~ 0
+Text Label 4850 5650 0    50   ~ 0
 I_CHG
 Wire Wire Line
 	3150 4850 2950 4850
@@ -1501,4 +1500,89 @@ F 3 "" H 10300 5800 50  0001 C CNN
 	1    10300 5800
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Conn_01x01_Male J106
+U 1 1 5C631A3D
+P 5500 4100
+F 0 "J106" H 5606 4187 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 5606 4187 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5500 4100 50  0001 C CNN
+F 3 "~" H 5500 4100 50  0001 C CNN
+	1    5500 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4100 6950 4100
+Text Label 6400 4100 0    50   ~ 0
+BTN
+$Comp
+L Connector:Conn_01x01_Male J105
+U 1 1 5C636614
+P 5050 4100
+F 0 "J105" H 5022 4076 50  0000 R CNN
+F 1 "Conn_01x01_Male" H 5156 4187 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5050 4100 50  0001 C CNN
+F 3 "~" H 5050 4100 50  0001 C CNN
+	1    5050 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C6366F0
+P 4850 4100
+AR Path="/5C163DDA/5C6366F0" Ref="#PWR?"  Part="1" 
+AR Path="/5C6366F0" Ref="#PWR0142"  Part="1" 
+F 0 "#PWR0142" H 4850 3850 50  0001 C CNN
+F 1 "GND" H 4855 3927 50  0001 C CNN
+F 2 "" H 4850 4100 50  0001 C CNN
+F 3 "" H 4850 4100 50  0001 C CNN
+	1    4850 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5C637D61
+P 4350 5650
+AR Path="/5C163DDA/5C637D61" Ref="R?"  Part="1" 
+AR Path="/5C637D61" Ref="R113"  Part="1" 
+F 0 "R113" V 4154 5650 50  0000 C CNN
+F 1 "2.5k" V 4245 5650 50  0000 C CNN
+F 2 "passive:R_0402_1005Metric_Rounded" H 4350 5650 50  0001 C CNN
+F 3 "~" H 4350 5650 50  0001 C CNN
+	1    4350 5650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 5650 4550 5650
+$Comp
+L Device:C_Small C?
+U 1 1 5C646EAB
+P 4550 5800
+AR Path="/5C163DDA/5C646EAB" Ref="C?"  Part="1" 
+AR Path="/5C646EAB" Ref="C114"  Part="1" 
+F 0 "C114" H 4458 5754 50  0000 R CNN
+F 1 "0.1u" H 4458 5845 50  0000 R CNN
+F 2 "passive:C_0402_1005Metric_Rounded" H 4550 5800 50  0001 C CNN
+F 3 "~" H 4550 5800 50  0001 C CNN
+	1    4550 5800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C646EB2
+P 4550 5900
+AR Path="/5C163DDA/5C646EB2" Ref="#PWR?"  Part="1" 
+AR Path="/5C646EB2" Ref="#PWR0143"  Part="1" 
+F 0 "#PWR0143" H 4550 5650 50  0001 C CNN
+F 1 "GND" H 4555 5727 50  0001 C CNN
+F 2 "" H 4550 5900 50  0001 C CNN
+F 3 "" H 4550 5900 50  0001 C CNN
+	1    4550 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 5700 4550 5650
+Connection ~ 4550 5650
+Wire Wire Line
+	4550 5650 4850 5650
 $EndSCHEMATC
